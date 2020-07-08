@@ -655,7 +655,7 @@ body {
 .main-how {
   background-color: #ffffff;
   width: 100%;
-  opacity: 80%;
+  opacity: 85%;
   padding: 30px 0 30px 0;
 }
 .main-how__title {
@@ -700,7 +700,7 @@ body {
 .main-services {
   background-color: skyblue;
   width: 100%;
-  opacity: 80%;
+  opacity: 85%;
   padding: 30px 0 30px 0;
 }
 .main-services__title {
@@ -727,7 +727,7 @@ body {
 .main-portfolio {
   background-color: #ffffff;
   width: 100%;
-  opacity: 80%;
+  opacity: 95%;
   padding: 30px 0 30px 0;
 }
 .main-portfolio__title {
