@@ -261,7 +261,7 @@
           <a href="#">Legal Notice | Privacy policy</a>
         </p>
         <div class="main-contacts-form">
-          <form id="data" action="" method="GET" class="main-contacts-form-items">
+          <form id="form" name="form" class="main-contacts-form-items">
             <div class="container">
             <div class="row">
             <div class="col-md-6">
@@ -269,7 +269,7 @@
                 class="main-contacts-form__inputs"
                 type="text"
                 placeholder="Enter your Name"
-                id="name"
+                name="name"
               />
             </div>
             <div class="col-md-6">
@@ -277,7 +277,7 @@
                 class="main-contacts-form__inputs"
                 type="text"
                 placeholder="Enter your Email"
-                id="mail"
+                name="mail"
               />
             </div>
             <div class="col-md-12">
@@ -285,7 +285,7 @@
                 class="main-contacts-form__inputs"
                 type="text"
                 placeholder="Subject"
-                id="subject"
+                name="subject"
               />
             </div>
             <div class="col-md-12 main-contacts-form__inputs--message">
@@ -294,18 +294,24 @@
                 cols="30"
                 rows="10"
                 placeholder="Message..."
-                id="message"
+                name="message"
               ></textarea>
             </div>
           </div>
           </div>
           </form>
           <div class=" main-contacts__form-button">
-            <button type="submit" form="data">
-              Submit
+            <button type="submit" form="form">
+              Send
             </button>
           </div>
         </div>
+        <div class="overlay js-overlay-thank-you">
+          <div class="popup js-thank-you">
+              <h4>Thank you for offer!</h4>
+              <div class="close-popup js-close-thank-you"></div>
+          </div>
+      </div>
       </section>
       <div class="maps">
         <!--The div element for the map -->

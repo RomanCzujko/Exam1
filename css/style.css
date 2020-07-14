@@ -1187,3 +1187,52 @@ body {
 #menu {
   opacity: 0;
 }
+
+.overlay {
+  position: fixed;
+  width: 30%;
+  top: 20%;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: none;
+}
+
+.popup {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #7bd37b;
+}
+
+.close-popup {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: "";
+  background-color: #000;
+  position: relative;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: "";
+  background-color: #000;
+  position: relative;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
