@@ -12,6 +12,12 @@
     </title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
     <style>
@@ -106,9 +112,9 @@
         <h3 class="main-how__title">How does it work?</h3>
         <p class="main-how__advice">Follow the three simple steps below</p>
         <ul class="main-how__chois" id="slowmenu3">
-          <li><a href="#1">Step 1</a></li>
-          <li><a href="#2">Step 2</a></li>
-          <li><a href="#3">Step 3</a></li>
+          <li><a href="#1"><button class="main-how__chois-button">Step 1</button> </a></li>
+          <li><a href="#2"><button class="main-how__chois-button">Step 2</button> </a></li>
+          <li><a href="#3"><button class="main-how__chois-button">Step 3</button> </a></li>
         </ul>
         <article class="main-how-info" id="1">
           <h4 class="main-how-info__title">Step 1</h4>
@@ -220,13 +226,12 @@
           <div class="main-slider-item"><img class="main-slider-item_img" src="img/portfolio2.png" alt="portfolio2-goup" />
             <h5 class="main-portfolio-wraper__title">Website with e-Shop</h5>
             <p class="main-portfolio-wraper__text">
-              An active online store website for a company that is engaged in
-              water treatment and the sale of water treatment filters >>>
+              Website for a company that specializes in interior design and
+              carries out repair work, among lot of other things >>>
               <a
                 class="main-portfolio-wraper__link"
                 href="https://www.swatec-ua.com/"
-                >www.swatec-ua.com</a
-              >
+                >www.bfbr-innenausbau.de</a
             </p>
           </div>
           <div class="main-slider-item"><img class="main-slider-item_img" src="img/portfolio3.png" alt="portfolio3-goup" />
@@ -256,8 +261,10 @@
           <a href="#">Legal Notice | Privacy policy</a>
         </p>
         <div class="main-contacts-form">
-          <form id="data" action="" method="GET">
-            <div>
+          <form id="data" action="" method="GET" class="main-contacts-form-items">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6">
               <input
                 class="main-contacts-form__inputs"
                 type="text"
@@ -265,15 +272,15 @@
                 id="name"
               />
             </div>
-            <div>
+            <div class="col-md-6">
               <input
                 class="main-contacts-form__inputs"
                 type="text"
-                placeholder="Your your Email"
+                placeholder="Enter your Email"
                 id="mail"
               />
             </div>
-            <div>
+            <div class="col-md-12">
               <input
                 class="main-contacts-form__inputs"
                 type="text"
@@ -281,7 +288,7 @@
                 id="subject"
               />
             </div>
-            <div class="main-contacts-form__inputs--message">
+            <div class="col-md-12 main-contacts-form__inputs--message">
               <textarea
                 class="main-contacts-form__inputs"
                 cols="30"
@@ -290,8 +297,10 @@
                 id="message"
               ></textarea>
             </div>
+          </div>
+          </div>
           </form>
-          <div class="main-contacts__form-button">
+          <div class=" main-contacts__form-button">
             <button type="submit" form="data">
               Submit
             </button>
@@ -599,10 +608,6 @@
       var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
       var marker = new google.maps.Marker({position: myLatLng, map: map, icon: image, draggable: true,
     animation: google.maps.Animation.DROP,});
-      var marker2 = new google.maps.Marker({position: myLatLng2, map: map, icon: image, draggable: true,
-    animation: google.maps.Animation.DROP,});
-      var marker2 = new google.maps.Marker({position: myLatLng3, map: map, icon: image, draggable: true,
-    animation: google.maps.Animation.DROP});
     }
         </script>
         <!--Load the API from the specified URL
@@ -638,5 +643,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -632,12 +632,14 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 .main-nav-scroll li {
   list-style: none;
   font-family: "Lato Bold";
   font-size: 16px;
+  margin-top: 10px;
 }
 .main-nav-scroll li:hover {
   cursor: pointer;
@@ -671,6 +673,17 @@ body {
 .main-how__chois {
   text-align: center;
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.main-how__chois-button {
+  background-color: #376ce9;
+  font-family: "Lato Light";
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin: 10px;
 }
 .main-how__chois li {
   list-style: none;
@@ -680,18 +693,20 @@ body {
   padding: 0 10px;
 }
 .main-how-info {
-  border: 2px solid #0c2152;
+  border: 2px solid #7b9ff1;
   width: 70%;
   margin: 20px auto;
+  border-radius: 15px;
 }
 .main-how-info__title {
   text-align: center;
+  margin-top: 20px;
 }
 .main-how-info__text {
   font-size: 15px;
   font-family: "Lato Light";
   text-align: left;
-  padding: 0 50px;
+  padding: 0 10px;
   line-height: 1.1;
   max-width: 70%;
   margin: 20px auto;
@@ -728,18 +743,17 @@ body {
   background-color: #ffffff;
   width: 100%;
   opacity: 95%;
-  padding: 30px 0 30px 0;
 }
 .main-portfolio__title {
   font-size: 26px;
   font-family: "Lato Bold";
   text-align: center;
+  padding-top: 20px;
 }
 .main-portfolio-wraper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 70%;
   margin: 0 auto;
 }
 .main-portfolio-wraper__item {
@@ -777,40 +791,47 @@ body {
   font-size: 16px;
   text-align: center;
   font-family: "Lato Regular";
+  color: 0;
 }
 .main-contacts__telephone {
   font-size: 16px;
   text-align: center;
   font-family: "Lato Regular";
+  color: 0;
 }
 .main-contacts__policy {
   font-size: 16px;
   text-align: center;
   font-family: "Lato Regular";
+  color: 0;
 }
 .main-contacts-form {
-  width: 30%;
-  min-width: 300px;
+  width: 60%;
   margin: 0 auto;
 }
 .main-contacts-form__inputs {
   width: 100%;
-  border-radius: 3px;
-  margin: 2px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px;
   border: none;
   font-size: 15px;
   font-family: "Lato Light";
+  padding: 10px;
+}
+.main-contacts-form__inputs--message textarea {
+  height: 120px;
 }
 .main-contacts__form-button {
   text-align: center;
 }
 .main-contacts__form-button button {
-  background-color: #0c2152;
-  color: #ffffff;
+  background-color: #5181f3;
   font-family: "Lato Light";
-  border-radius: 5px;
-  width: 100px;
+  border-radius: 10px;
+  width: 170px;
   height: 40px;
+  border: none;
 }
 .main-contacts__form-button button:hover {
   background-color: #615f5f;
@@ -911,21 +932,28 @@ body {
 .your-class-arrow {
   text-align: center;
   opacity: 90%;
+  height: 1px;
 }
 
 .fa-chevron-left {
-  color: #333335;
+  color: skyblue;
   font-size: 50px;
   position: relative;
   top: 180px;
 }
 
 .fa-chevron-right {
-  color: #333335;
+  color: skyblue;
   font-size: 50px;
   margin-left: 65%;
   position: relative;
   top: 180px;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+  cursor: pointer;
+  color: #3f99bd;
 }
 
 @media screen and (max-width: 992px) {

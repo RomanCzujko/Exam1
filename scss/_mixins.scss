@@ -1,6 +1,6 @@
 @mixin paragraf-info {
   text-align: left;
-  padding: 0 50px;
+  padding: 0 10px;
   line-height: 1.1;
   max-width: 70%;
   margin: 20px auto;
@@ -17,4 +17,5 @@
   font-size: 16px;
   text-align: center;
   font-family: "Lato Regular";
+  color: green($color: #000000);
 }
