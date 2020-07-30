@@ -496,6 +496,19 @@ body {
   padding: 5px;
   font-family: "Lato Light";
 }
+.header-lang {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+.header-lang img {
+  width: 40px;
+  margin: 3px;
+  cursor: pointer;
+}
+.header-lang img:hover {
+  box-shadow: #5dc8e5 0 0 10px;
+}
 .header-nav {
   flex-grow: 0.8;
   display: flex;
@@ -527,15 +540,17 @@ body {
   display: flex;
   color: #ffffff;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
   height: 55vh;
+  max-width: 1500px;
 }
 .main-face-steps__1 {
   align-self: flex-end;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   width: 25%;
   font-family: "Lato Regular";
+  margin-bottom: 10%;
 }
 .main-face-steps__1:hover {
   transform: scale(1.1, 1.1);
@@ -547,7 +562,7 @@ body {
 }
 .main-face-steps__2 {
   align-self: center;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   flex-grow: 0.6;
   padding: 20px;
@@ -559,6 +574,7 @@ body {
   max-width: fit-content;
   text-shadow: #5dc8e5 0 0 15px;
   font-family: "Lato Bold";
+  max-width: 400px;
 }
 .main-face-steps__2:hover {
   transform: scale(1.1, 1.1);
@@ -572,6 +588,7 @@ body {
   align-self: flex-start;
   width: 25%;
   font-family: "Lato Regular";
+  margin-top: 5%;
 }
 .main-face-steps__3:hover {
   transform: scale(1.1, 1.1);
@@ -590,7 +607,7 @@ body {
 }
 .main-face-general {
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 5px;
   text-shadow: #5dc8e5 0 0 20px;
   font-family: "Lato Regular";
@@ -625,7 +642,7 @@ body {
 .main-nav-scroll {
   flex-grow: 0.8;
   display: flex;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 .main-nav-scroll ul {
@@ -723,20 +740,30 @@ body {
   font-family: "Lato Bold";
   text-align: center;
 }
-.main-services__list {
-  font-size: 15px;
-  font-family: "Lato Light";
-  text-align: left;
-  line-height: 1.1;
-  max-width: 70%;
-  margin: 20px auto;
+.main-services__list-items-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.main-services__list li {
+.main-services__list p {
   font-size: 15px;
   font-family: "Lato Light";
-  margin: 10px auto;
-  padding-left: 10px;
-  line-height: 0.9;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  padding: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px 50px;
+  border-color: white;
+  z-index: 2;
+  width: 77%;
+  margin: 0 auto;
 }
 
 .main-portfolio {
@@ -1235,4 +1262,30 @@ body {
   top: 11px;
   transform: rotate(45deg);
   left: -4px;
+}
+
+.policy-info {
+  color: white;
+  width: 100%;
+  margin-top: 50px;
+  background-color: black;
+  opacity: 0.8;
+  padding: 30px 30px 30px 50px;
+  border-radius: 30px;
+}
+.policy-info-contacts-title, .policy-info-maininfo-title {
+  font-family: "Lato Bold";
+  font-size: 45px;
+}
+.policy-info-maininfo-title2 {
+  font-family: "Lato Bold";
+  font-size: 26px;
+}
+.policy-info-contacts-text, .policy-info-maininfo-text {
+  font-family: "Lato Light";
+  font-size: 15px;
+}
+
+.policy-logo:hover {
+  text-decoration: none;
 }
