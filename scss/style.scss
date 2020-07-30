@@ -74,14 +74,22 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-top: 5px;
+
+    font-size: 15px;
   }
   &-lang img {
     width: 40px;
-    margin: 3px;
-    cursor: pointer;
+    margin: 5px;
+  }
+  &-lang a {
+    color: white;
   }
   &-lang img:hover {
     box-shadow: #5dc8e5 0 0 10px;
+  }
+  &-lang a:hover {
+    text-decoration: none;
+    color: #dbc325;
   }
   &-nav {
     -webkit-box-flex: 0.8;
