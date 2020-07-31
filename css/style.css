@@ -747,11 +747,15 @@ body {
   font-family: "Lato Bold";
   text-align: center;
 }
+.main-services__list-items {
+  font-family: "Lato Light";
+}
 .main-services__list-items-title {
   display: block;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
+  font-family: "Lato Bold";
 }
 .main-services__list p {
   font-size: 15px;
