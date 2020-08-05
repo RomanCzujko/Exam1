@@ -329,6 +329,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     &-button {
       background-color: #376ce9;
@@ -670,6 +671,16 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px 50px;
+    border-color: white;
+    z-index: 2;
+    width: 77%;
+    margin: 0 auto;
+  }
   .video-intro {
     &-wraper {
       position: relative;
@@ -863,6 +874,16 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px 10px;
+    border-color: white;
+    z-index: 2;
+    width: 90%;
+    margin: 0 auto;
+  }
   // .main {
   //   min-width: 100%;
   // }
