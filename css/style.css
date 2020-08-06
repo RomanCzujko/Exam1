@@ -443,6 +443,7 @@ template {
 
 body {
   box-sizing: border-box;
+  min-width: 300px;
 }
 
 .video-intro {
@@ -457,7 +458,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 75vw;
+  height: 60vw;
+  min-height: 100vh;
   z-index: -1;
   position: fixed;
 }
@@ -465,6 +467,7 @@ body {
 .face-container {
   width: 80%;
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 .header {
@@ -474,6 +477,7 @@ body {
   justify-content: space-around;
   height: 100px;
   margin-top: 20px;
+  max-width: 1000px;
 }
 .header-logo {
   font-size: 50px;
@@ -548,7 +552,7 @@ body {
   color: #ffffff;
   margin: 0 auto;
   justify-content: space-around;
-  height: 55vh;
+  height: 62vh;
   max-width: 1500px;
 }
 .main-face-steps__1 {
@@ -637,6 +641,8 @@ body {
 }
 
 .main-nav {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #ffffff;
   display: flex;
   position: sticky;
@@ -683,16 +689,20 @@ body {
   width: 100%;
   opacity: 85%;
   padding: 30px 0 30px 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .main-how__title {
   font-size: 26px;
   font-family: "Lato Bold";
   text-align: center;
+  color: #312f2f;
 }
 .main-how__advice {
   font-size: 22px;
   text-align: center;
   font-family: "Lato Regular";
+  color: #312f2f;
 }
 .main-how__chois {
   text-align: center;
@@ -700,15 +710,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-.main-how__chois-button {
-  background-color: #376ce9;
-  font-family: "Lato Light";
-  border-radius: 10px;
-  width: 100%;
-  height: 40px;
-  border: none;
-  margin: 10px;
+  margin-top: 40px;
 }
 .main-how__chois li {
   list-style: none;
@@ -718,26 +720,36 @@ body {
   padding: 0 10px;
 }
 .main-how-info {
-  border: 2px solid #7b9ff1;
-  width: 70%;
+  width: 80%;
   margin: 20px auto;
   border-radius: 15px;
 }
 .main-how-info__title {
   text-align: center;
   margin-top: 20px;
+  font-size: 25px;
+  color: #312f2f;
 }
 .main-how-info__text {
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Lato Light";
   text-align: left;
   padding: 0 10px;
   line-height: 1.1;
   max-width: 70%;
   margin: 20px auto;
+  color: #312f2f;
+}
+
+.nav-link {
+  width: 16vw;
+  background-color: #5dc8e5;
+  color: #312f2f;
 }
 
 .main-services {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: skyblue;
   width: 100%;
   opacity: 85%;
@@ -747,30 +759,60 @@ body {
   font-size: 26px;
   font-family: "Lato Bold";
   text-align: center;
+  color: #312f2f;
 }
 .main-services__list-items {
   font-family: "Lato Light";
 }
 .main-services__list-items-title {
+  color: #312f2f;
   display: block;
-  width: 100%;
+  width: 40%;
   text-align: center;
   margin-bottom: 10px;
   font-family: "Lato Bold";
+  border-bottom: 1px solid #312f2f;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
-.main-services__list p {
+.main-services__list-items-img {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.main-services__list-items-img img {
+  width: 35px;
+  height: 35px;
+}
+.main-services__list-items img {
+  width: 35px;
+  display: block;
+  margin: 0 auto;
+}
+.main-services__list p:nth-child(2n) {
   font-size: 15px;
   font-family: "Lato Light";
-  border: 1px solid white;
+  color: #ffffff;
   border-radius: 10px;
-  padding: 5px;
   padding: 20px;
+  background-color: #688ad8;
+  margin-bottom: 0;
+}
+.main-services__list p:nth-child(2n+1) {
+  font-size: 15px;
+  font-family: "Lato Light";
+  color: #312f2f;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f2f3f7;
+  margin-bottom: 0;
 }
 
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
   padding: 20px 50px;
   border-color: white;
   z-index: 2;
@@ -779,6 +821,8 @@ body {
 }
 
 .main-portfolio {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
   opacity: 95%;
@@ -816,6 +860,8 @@ body {
 }
 
 .main-contacts {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: skyblue;
   width: 100%;
   opacity: 90%;
@@ -879,6 +925,7 @@ body {
 }
 
 .cookies {
+  max-width: 1920px;
   background-color: #232324;
   width: 100%;
   opacity: 90%;
@@ -952,20 +999,20 @@ body {
   text-shadow: 0 0 15px #1b1a1a;
 }
 
-.main-slider {
+.main-slider-websites {
   display: flex;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   height: 400px;
   align-items: center;
 }
-.main-slider-item {
+.main-slider-websites-item {
   width: 60%;
   text-align: center;
 }
-.main-slider-item_img {
+.main-slider-websites-item_img {
   margin: 0 auto;
-  height: 250px;
+  height: 100%;
 }
 
 .your-class-arrow {
@@ -1022,7 +1069,7 @@ body {
     height: 50vh;
   }
   .main-face-steps__1 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .main-face-steps__2 {
     font-size: 50px;
@@ -1037,11 +1084,16 @@ body {
     font-size: 22px;
   }
 }
+.maps {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 767px) {
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     padding: 20px 50px;
     border-color: white;
     z-index: 2;
@@ -1191,15 +1243,17 @@ body {
   .main-face-steps__1 {
     align-self: center;
     margin: 10px;
-    font-size: 12px;
+    font-size: 16px;
+    width: 80%;
   }
   .main-face-steps__2 {
     align-self: center;
+    text-align: center;
     margin: 0;
     padding: 0px;
-    font-size: 30px;
+    font-size: 50px;
     background-image: none;
-    width: 30%;
+    width: 80%;
   }
   .main-face-steps__3 {
     align-self: center;
@@ -1215,10 +1269,15 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .nav-link {
+    font-size: 14px;
+    min-width: 80px;
+  }
+
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     padding: 10px 10px;
     border-color: white;
     z-index: 2;

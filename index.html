@@ -115,16 +115,18 @@
           </ul>
         </nav>
       </div>
+
       <section class="main-how" id="how">
         <h3 class="main-how__title">Wie kann eine optimale Internetpräsenz erreicht werden?</h3>
         <p class="main-how__advice">Dazu sollten Sie nicht mehr als drei grundlegende Schritte beachten</p>
-        <ul class="main-how__chois" id="slowmenu3">
-          <li><a href="#1"><button class="main-how__chois-button">Schritt 1 </button> </a></li>
-          <li><a href="#2"><button class="main-how__chois-button">Schritt 2</button> </a></li>
-          <li><a href="#3"><button class="main-how__chois-button">Schritt 3</button> </a></li>
+        <ul class="main-how__chois nav nav-tabs">
+          <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#step1">Schritt 1 </a></li>
+          <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#step2">Schritt 2 </a></li>
+          <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#step3">Schritt 3 </a></li>
         </ul>
-        <article class="main-how-info" id="1">
-          <h4 class="main-how-info__title">Schritt 1 - Business PLAN</h4>
+        <div class="tab-content">
+          <div class="main-how-info tab-pane tab-pane show active" id="step1">
+          <h4 class="main-how-info__title">Schritt 1 - Idee | Business PLAN</h4>
           <p class="main-how-info__text">
             Versuchen Sie zunächst, die Anforderungen für Ihre Geschäftsentwicklung zu analysieren. Gerne unterstützen wir Sie dabei mit Wahrnehmungs- und Medienpsychologischen Aspekten!
           </p>
@@ -134,11 +136,11 @@
           <p class="main-how-info__text"> 
             Die Marktsituation ändert sich in der heutigen Zeit ständig. Gemeinsam können wir vorausschauende Strategien für Marketing und Vertrieb entwickeln und dabei Chancen / Risiken durch Auswertung des Wettbewerbs festhalten.
           </p>
-        </article>
-        <article class="main-how-info" id="2">
+          </div>
+        <div class="main-how-info tab-pane fade" id="step2">
           <h4 class="main-how-info__title">Schritt 2 - Website erstellen</h4>
           <p class="main-how-info__text">
-            Die Entwicklung von Websites (ab einem Preis von 500 Euro) und mobilen Apps nach Ihren Wünschen ist unsere Leidenschaft. Dazu erstellen wir für Sie unter Beachtung des Responsive Webdesigns Seiteninhalte (Logo, Bildmaterial, Schlüsselwörter ...) und tun alles um den Ruf und den Gewinn Ihres Unternehmens zu steigern. Wir liefern kreative, maßgeschneiderte und gut strukturierte Websites für jeden unserer Kunden um den Wiedererkennungseffekt in User Experience zu steigern.
+            Die Entwicklung von Websites und mobilen Apps nach Ihren Wünschen ist unsere Leidenschaft. Dazu erstellen wir für Sie unter Beachtung des Responsive Webdesigns Seiteninhalte (Logo, Bildmaterial, Schlüsselwörter ...) und tun alles um den Ruf und den Gewinn Ihres Unternehmens zu steigern. Wir liefern kreative, maßgeschneiderte und gut strukturierte Websites für jeden unserer Kunden um den Wiedererkennungseffekt in User Experience zu steigern.
           </p>
           <p class="main-how-info__text">
             Wir erarbeiten eine Content-Strategie für Ihre Homepage zur Einbettung des Gesamtszenarios Ihres Geschäfts. Dabei stützen wir uns auf potentielle Wiederverwendung von Inhalten durch Seitenbesucher und deren Gestaltungsmerkmale. Denn websiteübergreifendes Informationsangebot begünstigt eine bessere Suchmaschinen Indexierung und fördert Popularität Ihres Webangebots.
@@ -146,8 +148,8 @@
           <p class="main-how-info__text">
             ​Die Eröffnung eines <a href="./pages/ecommerce.html">Online-Shops</a> ist der einfachste Weg, um schnell mit dem Online-Verkauf zu beginnen. Wir entwickeln von Grund auf zuverlässige Internet-Shops, die für den zukünftigen Erfolg Ihres Unternehmens im Online-Geschäft sorgen. Unsere Webshops sind auf individuelle Kundenwünsche zugeschnitten.
           </p>
-        </article>
-        <article class="main-how-info" id="3">
+        </div>
+        <div class="main-how-info tab-pane fade" id="step3">
           <h4 class="main-how-info__title">Schritt 3 - Suchmaschinen optimierung durchführen</h4>
           <p class="main-how-info__text">
             Sie haben bereits eine Website, können diese aber mit Suchmaschinen nicht finden? Wir bieten Suchmaschinen optimierung, damit bestehendes Klientel Sie erreichen und potentielle Kunden Sie entdecken können.
@@ -159,37 +161,53 @@
             Bei Annotierung von Inhalten verbessern wir den Metadatenkonzept unter Beachtung der entsprechenden Schema-Typen und führen eine inhaltlich-technische SEO durch. Dabei prüfen wir die Überschriften, Artikel-Relevanz anhand der darin enthaltenen
 Wörter, Link-Popularität, <a href="./pages/domainname.html">URLs</a> und interne Links
           </p>
-        </article>
+        </div>
+      </div>
       </section>
       <section class="main-services" id="serv">
         <h3 class="main-services__title">Unsere Leistungen</h3>
         <div class="grid-layout main-services__list">
           
           <p class="main-services__list-items"><span class="main-services__list-items-title"> DOMAINNAME </span>
+            <img src="img/1222- Global Connection.png" alt="">
             Entwicklung und Auswahl eines eindeutigen Namens für die Website gemäß moderner, professioneller Methodik für eine verbesserte Arbeit mit Suchmaschinen
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">HOSTING</span>
+            <img src="img/1193 - Web Optimization.png" alt="">
             Webpräsenz Platzierung auf technisch optimierten Servern und Einrichtung eines eigenen E-Mail-Postfachs
           </p>
-          <p class="main-services__list-items"><span class="main-services__list-items-title">WEBSITE</span>
+          <p class="main-services__list-items"><span class="main-services__list-items-title">ERSTELLEN</span>
+            <span class="main-services__list-items-img">
+            <img src="img/html-5.png" alt="">
+            <img src="img/css.png" alt="">
+            <img src="img/sass.png" alt="">
+            <img src="img/bootstrap.png" alt="">
+            <img src="img/iconfinder_187_Js_logo_logos_4373213.png" alt="">
+            </span>
             Erstellung von Internetseiten für mittlere Unternehmen und Kleingewerbetreibende u. a. mit Sprachen wie HTML / CSS / JS / PHP 
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">LOGO</span>
+            <img src="img/1217 - Internet Ranking.png" alt="">
             Erstellung und Auswahl eines einzigartigen Logos, das Ihrem Geschäftsimage entspricht
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">ONLINESHOP</span>
+            <img src="img/1190 - Return on Investment.png" alt="">
             Konfiguration von Webshops und sonstigen Verkaufsplattformen
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">SUPPORT</span>
+            <img src="img/1202 - Technical Support.png" alt="">
             Kontinuierliche Pflege und Durchführung von Wartungsarbeiten an vorhandenen Homepages
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">WEBTEMPLATE</span>
+            <img src="img/1186 - Internet Marketing.png" alt="">
             Erstellung und Anpassung von Webseiten basierend auf vorgefertigten Vorlagen der CMS-Systeme und E-Commerce-Plattformen wie WordPress, WooCommerce, PrestaShop, Magento
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">SOCIALMEDIA</span>
+            <img src="img/1189 - Feedback.png" alt="">
             Marketinglösungen für den schnellen Verkaufsstart auf Facebook, Instagram und Einrichtung von Google Ads Werbekampagnen 
           </p>
           <p class="main-services__list-items"><span class="main-services__list-items-title">SEO</span>
+            <img src="img/1205 - SEO Award.png" alt="">
             Suchmaschinenoptimierung (SEO) durch umfangreiches Audit und andere Dienstleistungen für Sie und Ihr Unternehmen. Nehmen Sie einfach <a href="#contacts">Kontakt</a> mit uns auf
 
           </p>
@@ -202,8 +220,8 @@ Wörter, Link-Popularität, <a href="./pages/domainname.html">URLs</a> und inter
        
         <h3 class="main-portfolio__title">Beispiele</h3>
         <div class="your-class-arrow"></div>
-        <div class="main-slider">
-          <div class="main-slider-item"><img class="main-slider-item_img" src="img/portfolio1.png" alt="portfolio1-goup" />
+        <div class="main-slider-websites">
+          <div class="main-slider-websites-item"><img class="main-slider-websites-item_img" src="img/portfolio1.png" alt="portfolio1-goup" />
             <h5 class="main-portfolio-wraper__title">Homepage mit Webshop</h5>
             <p class="main-portfolio-wraper__text">
               Online-Shop für digitale Produkte, die alle zum Download zur Verfügung stehen. Ziel: bequemes shoppen per Mausklick. >>>
@@ -214,7 +232,7 @@ Wörter, Link-Popularität, <a href="./pages/domainname.html">URLs</a> und inter
               >
             </p>
           </div>
-          <div class="main-slider-item"><img class="main-slider-item_img" src="img/portfolio2.png" alt="portfolio2-goup" />
+          <div class="main-slider-websites-item"><img class="main-slider-websites-item_img" src="img/portfolio2.png" alt="portfolio2-goup" />
             <h5 class="main-portfolio-wraper__title">Landing Page</h5>
             <p class="main-portfolio-wraper__text">
               Website für ein Unternehmen, das sich auf Innenausbau spezialisiert hat und noch weitere Baumaßnahmen durchführt >>>
@@ -224,7 +242,7 @@ Wörter, Link-Popularität, <a href="./pages/domainname.html">URLs</a> und inter
                 >www.bfbr-innenausbau.de</a
             </p>
           </div>
-          <div class="main-slider-item"><img class="main-slider-item_img" src="img/portfolio3.png" alt="portfolio3-goup" />
+          <div class="main-slider-websites-item"><img class="main-slider-websites-item_img" src="img/portfolio3.png" alt="portfolio3-goup" />
             <h5 class="main-portfolio-wraper__title">Produktkatalog-Website</h5>
             <p class="main-portfolio-wraper__text">
               Website für ein Unternehmen, das Metallbearbeitungsmaschinen für Blech- und Kaltschmieden herstellt >>>

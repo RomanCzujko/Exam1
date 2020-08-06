@@ -13,6 +13,7 @@
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  min-width: 300px;
 }
 .video-intro {
   height: -webkit-fit-content;
@@ -20,11 +21,13 @@ body {
   height: fit-content;
   &-wraper {
     position: relative;
+
     &__video {
       position: absolute;
       top: 0;
       left: 0;
-      height: 75vw;
+      height: 60vw;
+      min-height: 100vh;
       z-index: -1;
       position: fixed;
     }
@@ -34,6 +37,7 @@ body {
 .face-container {
   width: 80%;
   margin: 0 auto;
+  max-width: 1920px;
 }
 .header {
   display: -webkit-box;
@@ -45,6 +49,7 @@ body {
   justify-content: space-around;
   height: 100px;
   margin-top: 20px;
+  max-width: 1000px;
   &-logo {
     font-size: 50px;
     margin: 0;
@@ -136,7 +141,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: space-around;
-    height: 55vh;
+    height: 62vh;
     max-width: 1500px;
     &__1 {
       -ms-flex-item-align: end;
@@ -261,6 +266,8 @@ body {
   }
 }
 .main-nav {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,15 +321,19 @@ body {
 .main-how {
   background-color: #ffffff;
   @include section-poz-container;
+  max-width: 1920px;
+  margin: 0 auto;
   &__title {
     font-size: $section-titles-font-size;
     font-family: $section-titles-font;
     @include title-info;
+    color: #312f2f;
   }
   &__advice {
     font-size: 22px;
     text-align: center;
     font-family: 'Lato Regular';
+    color: #312f2f;
   }
   &__chois {
     text-align: center;
@@ -330,16 +341,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-    &-button {
-      background-color: #376ce9;
-      font-family: $paragraf-info-font;
-      border-radius: 10px;
-      width: 100%;
-      height: 40px;
-      border: none;
-      margin: 10px;
-    }
+    margin-top: 40px;
   }
   &__chois li {
     list-style: none;
@@ -349,49 +351,90 @@ body {
     padding: 0 10px;
   }
   &-info {
-    border: 2px solid #7b9ff1;
-    width: 70%;
+    width: 80%;
     margin: 20px auto;
     border-radius: 15px;
     &__title {
       text-align: center;
       margin-top: 20px;
+      font-size: 25px;
+      color: #312f2f;
     }
     &__text {
-      font-size: $paragraf-info-font-size;
+      font-size: 18px;
       font-family: $paragraf-info-font;
       @include paragraf-info;
+      color: #312f2f;
     }
   }
 }
+.nav-link {
+  width: 16vw;
+  background-color: #5dc8e5;
+  color: #312f2f;
+}
 .main-services {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: skyblue;
   @include section-poz-container;
-
   &__title {
     font-size: $section-titles-font-size;
     font-family: $section-titles-font;
     @include title-info;
+    color: #312f2f;
   }
   &__list {
     &-items {
       font-family: $paragraf-info-font;
+
       &-title {
+        color: #312f2f;
         display: block;
-        width: 100%;
+        width: 40%;
         text-align: center;
         margin-bottom: 10px;
         font-family: $section-titles-font;
+        border-bottom: 1px solid #312f2f;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      &-img {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+      &-img img {
+        width: 35px;
+        height: 35px;
       }
     }
+    &-items img {
+      width: 35px;
+      display: block;
+      margin: 0 auto;
+    }
   }
-  &__list p {
+  &__list p:nth-child(2n) {
     font-size: $paragraf-info-font-size;
     font-family: $paragraf-info-font;
-    border: 1px solid white;
+    color: #ffffff;
+    // border: 1px solid white;
     border-radius: 10px;
-    padding: 5px;
     padding: 20px;
+    background-color: #688ad8;
+    margin-bottom: 0;
+  }
+  &__list p:nth-child(2n + 1) {
+    font-size: $paragraf-info-font-size;
+    font-family: $paragraf-info-font;
+    color: #312f2f;
+    // border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(242, 243, 247);
+    margin-bottom: 0;
   }
 
   // &__list li {
@@ -405,7 +448,7 @@ body {
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
   padding: 20px 50px;
   border-color: white;
   z-index: 2;
@@ -413,6 +456,8 @@ body {
   margin: 0 auto;
 }
 .main-portfolio {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
   opacity: 95%;
@@ -455,6 +500,8 @@ body {
   }
 }
 .main-contacts {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: skyblue;
   width: 100%;
   opacity: 90%;
@@ -510,6 +557,7 @@ body {
   }
 }
 .cookies {
+  max-width: 1920px;
   background-color: rgb(35, 35, 36);
   width: 100%;
   opacity: 90%;
@@ -586,10 +634,10 @@ body {
 }
 
 // -------------SLIDER------------
-.main-slider {
+.main-slider-websites {
   display: flex;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   height: 400px;
   align-items: center;
   &-item {
@@ -597,7 +645,7 @@ body {
     text-align: center;
     &_img {
       margin: 0 auto;
-      height: 250px;
+      height: 100%;
     }
   }
 }
@@ -650,7 +698,7 @@ body {
       height: 50vh;
     }
     &-steps__1 {
-      font-size: 14px;
+      font-size: 16px;
     }
     &-steps__2 {
       font-size: 50px;
@@ -669,12 +717,15 @@ body {
   //   padding: 0 calc(50vh - 200px);
   // }
 }
-
+.maps {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 @media screen and (max-width: 767px) {
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     padding: 20px 50px;
     border-color: white;
     z-index: 2;
@@ -842,18 +893,19 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
         margin: 10px;
-        font-size: 12px;
-        // min-width: 300px;
+        font-size: 16px;
+        width: 80%;
       }
       &__2 {
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+        text-align: center;
         margin: 0;
         padding: 0px;
-        font-size: 30px;
+        font-size: 50px;
         background-image: none;
-        width: 30%;
+        width: 80%;
       }
 
       &__3 {
@@ -874,10 +926,14 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .nav-link {
+    font-size: 14px;
+    min-width: 80px;
+  }
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     padding: 10px 10px;
     border-color: white;
     z-index: 2;
