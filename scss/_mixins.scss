@@ -1,7 +1,7 @@
 @mixin paragraf-info {
   text-align: left;
   padding: 0 10px;
-  line-height: 1.1;
+  line-height: 1.5;
   max-width: 70%;
   margin: 20px auto;
 }
@@ -16,6 +16,6 @@
 @mixin for-contacts-texts {
   font-size: 16px;
   text-align: center;
-  font-family: "Lato Regular";
+  font-family: 'Lato Regular';
   color: green($color: #000000);
 }

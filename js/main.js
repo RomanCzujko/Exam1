@@ -26,6 +26,7 @@ $(document).ready(function () {
     $('body,html').animate({ scrollTop: top }, 1500)
   })
 })
+
 // $('#1 a').click(function (e) {
 //   e.preventDefault()
 //   $(this).tab('show')
@@ -56,12 +57,13 @@ $(document).ready(function () {
 })
 // ------------------- SLIDER --------------
 $(function () {
-  $('.main-slider-websites').slick({
+  $('.main-slider-websites1').slick({
     infinite: true,
     slidesToShow: 1,
-    speed: 2000,
+    pauseOnHover: false,
+    speed: 1500,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     cssEase: 'linear',
     responsive: [
       {
@@ -73,7 +75,33 @@ $(function () {
       },
     ],
     arrows: true,
-    appendArrows: $('.your-class-arrow'),
+    appendArrows: $('.your-class-arrow1'),
+    prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i> ',
+    nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  })
+  //   $(".main-slider").appendDots();
+})
+$(function () {
+  $('.main-slider-websites2').slick({
+    infinite: true,
+    mobileFirst: true,
+    slidesToShow: 1,
+    pauseOnHover: false,
+    fade: true,
+    speed: 1000,
+    autoplay: true,
+    cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        },
+      },
+    ],
+    arrows: true,
+    appendArrows: $('.your-class-arrow2'),
     prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i> ',
     nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
   })
