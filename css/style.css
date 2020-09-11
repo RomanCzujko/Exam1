@@ -489,7 +489,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   justify-content: space-around;
   height: 100px;
-  margin-top: 20px;
+  margin-top: 5px;
   max-width: 1000px;
 }
 .header-logo {
@@ -500,6 +500,7 @@ body::-webkit-scrollbar-thumb {
   padding: 5px;
   font-family: "Lato Bold";
   align-self: center;
+  margin-top: 7px;
 }
 .header-logo--color {
   color: #9fb4d3;
