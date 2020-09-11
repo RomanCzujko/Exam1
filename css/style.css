@@ -516,11 +516,12 @@ body::-webkit-scrollbar-thumb {
 .header-lang {
   display: flex;
   justify-content: flex-start;
-  margin-top: 5px;
   font-size: 15px;
+  margin-bottom: 10px;
+  align-items: center;
 }
 .header-lang img {
-  width: 40px;
+  width: 30px;
   margin: 5px;
 }
 .header-lang a {
@@ -600,6 +601,9 @@ body::-webkit-scrollbar-thumb {
   text-shadow: #5dc8e5 0 0 15px;
   font-family: "Lato Bold";
   max-width: 400px;
+}
+.main-face-steps__2--en {
+  font-size: 75px;
 }
 .main-face-steps__2:hover {
   transform: scale(1.1, 1.1);
