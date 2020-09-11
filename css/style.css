@@ -504,7 +504,7 @@ body::-webkit-scrollbar-thumb {
 .header-logo--color {
   color: #9fb4d3;
 }
-.header-logo:hover {
+.header-logo img:hover {
   cursor: pointer;
 }
 .header-logo-title {
