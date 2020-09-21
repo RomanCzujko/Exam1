@@ -1590,7 +1590,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
   width: 100%;
   margin-left: 30%;
-  color: red;
+  color: #f04a4a;
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -1624,5 +1624,33 @@ body::-webkit-scrollbar-thumb {
 .prices-description-title {
   margin-top: 30px;
   font-family: "Lato Bold";
-  font-size: 26px;
+  font-size: 40px;
+}
+.prices-description-info {
+  width: 80%;
+}
+.prices-description-info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3c8bb3;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+.prices-description-info-item-number {
+  padding: 10px 30px;
+  font-size: 40px;
+}
+.prices-description-info-item-text {
+  padding: 20px 20px;
+  margin: 0;
+}
+.prices-description-info-item-amount {
+  padding: 10px 30px;
+  font-size: 30px;
+}
+.prices-total-amount {
+  font-size: 40px;
+  color: #e94545;
+  margin-bottom: 20px;
 }

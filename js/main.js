@@ -26,7 +26,22 @@ $(document).ready(function () {
     $('body,html').animate({ scrollTop: top }, 1500)
   })
 })
-
+$(document).ready(function () {
+  $('#landing').on('click', 'a', function (event) {
+    event.preventDefault()
+    let id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 1500)
+  })
+})
+$(document).ready(function () {
+  $('#shop').on('click', 'button', function (event) {
+    event.preventDefault()
+    let id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 1500)
+  })
+})
 // $('#1 a').click(function (e) {
 //   e.preventDefault()
 //   $(this).tab('show')

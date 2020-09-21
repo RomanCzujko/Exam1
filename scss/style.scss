@@ -1185,7 +1185,7 @@ body::-webkit-scrollbar-thumb {
           font-size: 30px;
           width: 100%;
           margin-left: 30%;
-          color: red;
+          color: rgb(240, 74, 74);
           display: block;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
@@ -1222,6 +1222,34 @@ body::-webkit-scrollbar-thumb {
   &-description-title {
     margin-top: 30px;
     font-family: $section-titles-font;
-    font-size: $section-titles-font-size;
+    font-size: 40px;
+  }
+  &-description-info {
+    width: 80%;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: rgb(60, 139, 179);
+      border-radius: 10px;
+      margin: 5px 0px;
+      &-number {
+        padding: 10px 30px;
+        font-size: 40px;
+      }
+      &-text {
+        padding: 20px 20px;
+        margin: 0;
+      }
+      &-amount {
+        padding: 10px 30px;
+        font-size: 30px;
+      }
+    }
+  }
+  &-total-amount {
+    font-size: 40px;
+    color: rgb(233, 69, 69);
+    margin-bottom: 20px;
   }
 }
