@@ -1075,6 +1075,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 15px;
 }
 
+.cookies {
+  z-index: 100;
+}
+
 .angle-links-anchor {
   text-decoration: none;
   color: #0c2152;

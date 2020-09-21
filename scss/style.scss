@@ -648,6 +648,9 @@ body::-webkit-scrollbar-thumb {
     font-size: $paragraf-info-font-size;
   }
 }
+.cookies {
+  z-index: 100;
+}
 .angle-links-anchor {
   text-decoration: none;
   color: #0c2152;
