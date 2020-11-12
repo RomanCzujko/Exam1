@@ -1,8 +1,13 @@
-
 <?php
 
-$recepient = "info@web-up-steps.com";
+
+
+
+$recepient = "bendiko@outlook.de";
 $siteName = "WebUpSteps - web-up-steps.com";
+
+
+
 
 $name = trim($_POST["name"]);
 $mail = trim($_POST["mail"]);
@@ -17,4 +22,5 @@ mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-
 
 
 ?>
+
 

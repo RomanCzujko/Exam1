@@ -1,3 +1,9 @@
+setTimeout ( function Loader () {
+  $( document.body ).ready(function() {
+    $( ".preloader" ).first().fadeOut( "slow" );
+  });
+}, 2000) 
+
 $(document).on('scroll', window, function () {
   if ($(window).scrollTop() < 400) {
     $('.main-nav').hide()
@@ -125,20 +131,23 @@ $(function () {
 
 // ------------------- Отправка формы
 
-$(document).ready(function () {
-  $('#form').submit(function () {
-    $.ajax({
-      type: 'POST',
-      url: 'send.php',
-      data: $(this).serialize(),
-    }).done(function () {
-      $('.js-overlay-thank-you').fadeIn()
-      $(this).find('input').val('')
-      $('#form').trigger('reset')
-    })
-    return false
-  })
-})
+
+
+
+// $(document).ready(function () {
+//   $('#form').submit(function () {
+//     $.ajax({
+//       type: 'POST',
+//       url: 'send.php',
+//       data: $(this).serialize(),
+//     }).done(function () {
+//       $('.js-overlay-thank-you').fadeIn()
+//       $(this).find('input').val('')
+//       $('#form').trigger('reset')
+//     })
+//     return false
+//   })
+// })
 
 /// -----------Закрыть попап «спасибо»
 
