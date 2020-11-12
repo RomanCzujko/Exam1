@@ -1175,6 +1175,214 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 0 0 15px #1b1a1a;
 }
 
+.overlay {
+  position: fixed;
+  width: 30%;
+  top: 20%;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: none;
+}
+
+.popup {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #7bd37b;
+}
+
+.close-popup {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: "";
+  background-color: #000;
+  position: relative;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: "";
+  background-color: #000;
+  position: relative;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+
+.policy-info {
+  color: white;
+  width: 100%;
+  margin-top: 50px;
+  background-color: black;
+  opacity: 0.8;
+  padding: 30px 30px 30px 50px;
+  border-radius: 30px;
+}
+.policy-info-contacts-title, .policy-info-maininfo-title {
+  font-family: "Lato Bold";
+  font-size: 45px;
+}
+.policy-info-maininfo-title2 {
+  font-family: "Lato Bold";
+  font-size: 26px;
+}
+.policy-info-contacts-text, .policy-info-maininfo-text {
+  font-family: "Lato Light";
+  font-size: 15px;
+}
+
+.policy-logo:hover {
+  text-decoration: none;
+}
+
+.prices {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: skyblue;
+  border-radius: 20px;
+  opacity: 0.9;
+  color: #ffffff;
+}
+.prices-title {
+  padding: 20px;
+  font-size: 26px;
+  font-family: "Lato Bold";
+}
+.prices-block {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.prices-block-item {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  background-color: white;
+  color: #666363;
+  border-radius: 15px;
+  z-index: 2;
+  min-width: 250px;
+  margin: 5px;
+}
+.prices-block-item-img {
+  width: 100%;
+  margin-top: 15px;
+}
+.prices-block-item-name {
+  width: 80%;
+  position: relative;
+  top: -30px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+.prices-block-item-name-title {
+  font-family: "Lato Bold";
+  font-size: 18px;
+}
+.prices-block-item-name-subtitle {
+  font-family: "Lato Light";
+  font-size: 15px;
+  color: #3e8ead;
+  margin-bottom: 0;
+}
+.prices-block-item-text {
+  padding: 0 20px;
+  min-height: 100px;
+}
+.prices-block-item-prices {
+  width: 100%;
+}
+.prices-block-item-prices_old {
+  font-size: 30px;
+  width: 100%;
+  margin-left: 30%;
+  color: #f04a4a;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.prices-block-item-prices_ab {
+  padding-left: 10%;
+}
+.prices-block-item-prices-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.prices-block-item-prices-wraper_active {
+  padding-left: 10%;
+  font-size: 40px;
+  color: green;
+  font-family: "Lato Bold";
+}
+.prices-block-item-prices-wraper_btn {
+  margin-right: 20px;
+  width: 40%;
+  border: 0;
+  background-color: skyblue;
+  border-radius: 15px;
+}
+.prices-block-item-prices_promodates {
+  text-align: center;
+  color: green;
+  padding: 10px;
+  font-size: 12px;
+}
+.prices-description-title {
+  margin-top: 30px;
+  font-family: "Lato Bold";
+  font-size: 40px;
+}
+.prices-description-info {
+  width: 80%;
+}
+.prices-description-info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3c8bb3;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+.prices-description-info-item-number {
+  padding: 10px 30px;
+  font-size: 40px;
+}
+.prices-description-info-item-text {
+  padding: 20px 20px;
+  margin: 0;
+}
+.prices-description-info-item-amount {
+  padding: 10px 30px;
+  font-size: 30px;
+}
+.prices-total-amount {
+  font-size: 40px;
+  color: #e94545;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
   .cookies {
     width: 100%;
@@ -1237,6 +1445,41 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 767px) {
+  .prices {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: skyblue;
+    border-radius: 20px;
+    opacity: 0.9;
+    color: #ffffff;
+  }
+  .prices-title {
+    padding: 20px;
+    font-size: 26px;
+    font-family: "Lato Bold";
+  }
+  .prices-block {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .prices-block-item {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    color: #666363;
+    border-radius: 15px;
+    z-index: 2;
+    min-width: 250px;
+    margin: 5px;
+  }
+
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1516,208 +1759,4 @@ body::-webkit-scrollbar-thumb {
 }
 #menu {
   opacity: 0;
-}
-
-.overlay {
-  position: fixed;
-  width: 30%;
-  top: 20%;
-  right: 0%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  display: none;
-}
-
-.popup {
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
-  padding: 30px;
-  color: #7bd37b;
-}
-
-.close-popup {
-  position: relative;
-  top: 15px;
-  right: 15px;
-  width: 23px;
-  height: 23px;
-  cursor: pointer;
-}
-
-.close-popup:before {
-  content: "";
-  background-color: #000;
-  position: relative;
-  height: 1px;
-  width: 31px;
-  top: 11px;
-  left: -4px;
-  transform: rotate(-45deg);
-}
-
-.close-popup:after {
-  content: "";
-  background-color: #000;
-  position: relative;
-  height: 1px;
-  width: 31px;
-  top: 11px;
-  transform: rotate(45deg);
-  left: -4px;
-}
-
-.policy-info {
-  color: white;
-  width: 100%;
-  margin-top: 50px;
-  background-color: black;
-  opacity: 0.8;
-  padding: 30px 30px 30px 50px;
-  border-radius: 30px;
-}
-.policy-info-contacts-title, .policy-info-maininfo-title {
-  font-family: "Lato Bold";
-  font-size: 45px;
-}
-.policy-info-maininfo-title2 {
-  font-family: "Lato Bold";
-  font-size: 26px;
-}
-.policy-info-contacts-text, .policy-info-maininfo-text {
-  font-family: "Lato Light";
-  font-size: 15px;
-}
-
-.policy-logo:hover {
-  text-decoration: none;
-}
-
-.prices {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  background-color: skyblue;
-  border-radius: 20px;
-  opacity: 0.9;
-  color: #ffffff;
-}
-.prices-title {
-  padding: 20px;
-  font-size: 26px;
-  font-family: "Lato Bold";
-}
-.prices-block {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.prices-block-item {
-  display: flex;
-  flex-direction: column;
-  width: 31%;
-  background-color: white;
-  color: #666363;
-  border-radius: 15px;
-  z-index: 2;
-}
-.prices-block-item-img {
-  width: 100%;
-  margin-top: 15px;
-}
-.prices-block-item-name {
-  width: 80%;
-  position: relative;
-  top: -30px;
-  background-color: white;
-  border-radius: 15px;
-  padding: 5px 15px;
-}
-.prices-block-item-name-title {
-  font-family: "Lato Bold";
-  font-size: 18px;
-}
-.prices-block-item-name-subtitle {
-  font-family: "Lato Light";
-  font-size: 15px;
-  color: #3e8ead;
-  margin-bottom: 0;
-}
-.prices-block-item-text {
-  padding: 0 20px;
-  min-height: 100px;
-}
-.prices-block-item-prices {
-  width: 100%;
-}
-.prices-block-item-prices_old {
-  font-size: 30px;
-  width: 100%;
-  margin-left: 30%;
-  color: #f04a4a;
-  display: block;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.prices-block-item-prices_ab {
-  padding-left: 10%;
-}
-.prices-block-item-prices-wraper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.prices-block-item-prices-wraper_active {
-  padding-left: 10%;
-  font-size: 40px;
-  color: green;
-  font-family: "Lato Bold";
-}
-.prices-block-item-prices-wraper_btn {
-  margin-right: 20px;
-  width: 40%;
-  border: 0;
-  background-color: skyblue;
-  border-radius: 15px;
-}
-.prices-block-item-prices_promodates {
-  text-align: center;
-  color: green;
-  padding: 10px;
-  font-size: 12px;
-}
-.prices-description-title {
-  margin-top: 30px;
-  font-family: "Lato Bold";
-  font-size: 40px;
-}
-.prices-description-info {
-  width: 80%;
-}
-.prices-description-info-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #3c8bb3;
-  border-radius: 10px;
-  margin: 5px 0px;
-}
-.prices-description-info-item-number {
-  padding: 10px 30px;
-  font-size: 40px;
-}
-.prices-description-info-item-text {
-  padding: 20px 20px;
-  margin: 0;
-}
-.prices-description-info-item-amount {
-  padding: 10px 30px;
-  font-size: 30px;
-}
-.prices-total-amount {
-  font-size: 40px;
-  color: #e94545;
-  margin-bottom: 20px;
 }
